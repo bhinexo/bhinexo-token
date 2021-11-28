@@ -1,0 +1,33 @@
+{
+  "name": "@bhinexo/bhinexo-token",
+  "version": "1.0.0",
+  "description": "Smart contract solidity for the Bhinexo Token⚡️",
+  "homepage": "https://bhinexo.com",
+  "scripts": {
+    "test": "truffle test --stacktrace",
+    "compile": "truffle compile",
+    "deploy:avalanche": "truffle migrate --reset --network avalanche",
+    "deploy:fuji": "truffle migrate --reset --network fuji",
+    "deploy:eth": "truffle migrate --reset --network ethereum",
+    "deploy:kovan": "truffle migrate --reset --network kovan",
+    "deploy:ropsten": "truffle migrate --reset --network ropsten"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhinexo/bhinexo-token.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bhinexo/bhinexo-token/issues"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "dotenv": "^10.0.0",
+    "ganache-cli": "^6.12.2",
+    "solc": "^0.8.10",
+    "truffle-plugin-verify": "^0.5.18"
+  }
+}
